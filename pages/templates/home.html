@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %} Welcome to PyData Boston! {% endblock %}
+
+{% block content %}
+
+<!--<img src="{% static 'images/pydata_boston_logo.png' %}"> -->
+
+<div class="jumbotron">
+  <h1 class="display-4">PyData Boston</h1>
+  <p class="lead">an educational program of NumFOCUS, a 501(c)(3) nonprofit charity</p>
+  <hr class="my-4">
+  <p>PyData is a forum for the international community of users and developers of data analysis tools to share and learn together.</p>
+
+  <p>Interested? Our chapter meets monthly at different locations in the Boston-Cambridge area. Join us!</p>
+
+  <p><a class="btn btn-primary btn-lg" href="https://www.meetup.com/PyData-Boston-Cambridge/" role="button">RSVP on Meetup</a></p>
+  <p><a class="btn btn-primary btn-lg" href="https://meet.meetup.com/wf/click?upn=pEEcc35imY7Cq0tG1vyTt-2FuST3Q0bI9BN6e1NoEtwkcNXG8r0JBwopJGUtGXIZCH269lDzot6Ht67Q6lzz-2Fdyhcn6MK2nJzClAOQVoaj3lPzWS7p20-2F1UIK2TwanKI5SHpXUBKUrzZE55U10YKwTleUIyUxBYbah7bPqs7iAf16zUVIywIrjk7Q8EAzXcD5YJoRjFWcY31PzCcbd5-2FDxCWrtx1ZpGfPcU65-2FsrafzzA-3D_-2Fk5Sd-2BxH2kjrng-2B9WhTrJhyCepLYcxvnOhh60Faks9jdh-2BcBlUnH80N3yxkfJfcV-2Fc6Uow0d3LdBCMTEtmjj7RzkBn6jmC7tYeWZlsA9P-2B1fg-2Brj5DnRqe4eMVfLNdY4dAdBClyap9CoqTu-2BfuOE3uoj5-2FenHCrsVdOwNioae8UF9daXg6nysQnAwhzYhgIwBV-2F8HoszdDJ2HH4mO-2FPwfw-3D-3D" role="button">Say hi on Slack</a></p>
+  <p><a class="btn btn-primary btn-lg" href="https://twitter.com/hashtag/pydatabos?src=hash" role="button">Follow #pydatabos on Twitter</a></p>
+
+  <p>If you're interested in speaking, hosting, sponsoring, or volunteering, <a href="{% url 'get-involved' %}"> get involved here</a>.</p>
+</div>
+
+<p>PyData provides a forum for the international community of users and developers of data analysis tools to share ideas and learn from each other. The global PyData network promotes discussion of best practices, new approaches, and emerging technologies for data management, processing, analytics, and visualization. PyData communities approach data science using many languages, including (but not limited to) Python, Julia, and R.<br></p>
+
+
+
+<!--
+<div class="card" style="width: 18rem;">
+    <img src="{% static 'images/pydata_boston_logo.png' %}" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <a href="#" class="btn btn-primary">Go somewhere</a>
+    </div>
+  </div>
+-->
+
+{% endblock %}
